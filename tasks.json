@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Compilar Projeto Crow",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-std=c++17", 
+                "-I", "C:/Crow/include",
+                "-I", "${workspaceFolder}/asio_include",
+                "-lpthread",
+                "-lws2_32",
+                "-lmswsock",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compilador: g++ com suporte a C++17, Crow e Asio."
+        }
+    ]
+}
