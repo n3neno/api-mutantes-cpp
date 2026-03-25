@@ -13,6 +13,7 @@ API Rest construída para dedectar símios e humanos, o usuário fornece o DNA q
 A API possui duas rotas principais. É possível usar o PowerShell, cURL ou ferramentas como PostMan/Insonmia
 
 ## AVISO! Devido ao uso do Render, a API demorara para responder o primeiro comando pois ela está "acordando"! Este processo pode levar de 30 a 50s.
+## Além disso, devido ao uso do plano gratuito do Render, caso o servidor reiniciar novamente devido a inatividade, os bancos de dados salvos no SQLite seram resetados
 ### Dedectar Símio ('POST/ simian')
 Recebe um JSON com a matriz de DNA e verefica se pertence a um símio
 * Retorno 200 OK: Símio
