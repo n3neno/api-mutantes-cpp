@@ -32,6 +32,7 @@ bool isSimian(const std::vector<std::string>& dna) {
                 int c = 1;
                 for (int i = 1; i < 4; i++) {
                     if (letra == dna[linha + i][coluna + i]) c++;
+                    else c = 1;
                 }
                 if (c == 4) return true;
             }
@@ -40,6 +41,7 @@ bool isSimian(const std::vector<std::string>& dna) {
                 int c = 1;
                 for (int i = 1; i < 4; i++) {
                     if (letra == dna[linha + i][coluna]) c++;
+                    else c = 1;
                 }
                 if (c == 4) return true;
             }
@@ -48,6 +50,7 @@ bool isSimian(const std::vector<std::string>& dna) {
                 int c = 1;
                 for (int i = 1; i < 4; i++) {
                     if (letra == dna[linha][coluna + i]) c++;
+                    else c = 1;
                 }
                 if (c == 4) return true;
             }
@@ -56,6 +59,7 @@ bool isSimian(const std::vector<std::string>& dna) {
                 int c = 1;
                 for (int i = 1; i < 4; i++) {
                     if (letra == dna[linha + i][coluna - i]) c++;
+                    else c = 1;
                 }
                 if (c == 4) return true;
             }
