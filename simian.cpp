@@ -25,7 +25,6 @@ bool validade_dna(const std::vector<std::string>& dna) {
 bool isSimian(const std::vector<std::string>& dna) {
     int tamanho = dna.size();
     for (int linha = 0; linha < tamanho; linha++) {
-       
         for (int coluna = 0; coluna < tamanho; coluna++) {
             char letra = dna[linha][coluna];
 
